@@ -1,0 +1,75 @@
+.site-layout-content {
+	background: #fff;
+	padding: 10px 50px;
+	margin-top: 64px;
+	min-height: 500px;
+}
+.logo {
+	width: 120px;
+	height: 31px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 16px 24px 16px 0;
+	float: left;
+	color: #fff;
+	line-height: 2;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.logo a {
+	color: orange;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected, .ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+    background-color: transparent;
+}
+
+.fixed-header { 
+	position: fixed;
+	z-index: 1;
+	width: 100%; 
+}
+
+.ant-card-cover img {
+	height: 200px;
+}
+
+.ant-card {
+	height: 100%;
+}
+
+.ant-pagination {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.ant-typography {
+	text-transform: capitalize;
+}
+
+.ant-spin-spinning {
+	width: 100%;
+    padding: 10%;
+}
+
+.ant-drawer-body {
+	padding: 0 24px !important;
+}
+
+.ant-drawer-body .ant-card-bordered {
+	border: none !important;
+}
+
+.ant-drawer-body .ant-card-body {
+    padding: 24px 0 !important;
+}
+
+.ant-drawer-body .ant-card-head {
+	 padding: 0 !important;
+}
+
+.text-center {
+	text-align: center;
+}
