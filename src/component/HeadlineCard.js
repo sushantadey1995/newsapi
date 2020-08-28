@@ -20,12 +20,12 @@ function HeadlineCard(props) {
 	return (
 		<React.Fragment>
 			<div className="site-card-wrapper">
-				<Row gutter={16}>
+				<Row gutter={16} className="flex-container">
 					{ props.articleList.map((item, index) => 
-						<Col key={index} style={{ marginTop: 30 }} >
+						<Col key={index} style={{ marginTop: 30, maxWidth: 300, width: '100%' }} >
 							<Card
 								hoverable
-								style={{ width: 300 }}
+								style={{ maxWidth: 300, width: '100%' }}
 								cover={<img alt={item.title} src={item.urlToImage} />}
 								extra={<Button type="primary" onClick={() => showDrawer(item)}>More</Button>}
 								title={item.author}

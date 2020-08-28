@@ -5,6 +5,7 @@ import "./css/styles.css";
 import Headlines from './component/Headlines';
 import HeadlinesCategoryWise from './component/HeadlinesCategoryWise';
 import HeadlinesSearch from './component/HeadlinesSearch';
+import HeadlinesSources from './component/HeadlinesSources';
 
 function App(props) {
 	return (
@@ -19,6 +20,8 @@ function App(props) {
 				<Route exact path="/sports" render={ (props) => <HeadlinesCategoryWise stype="sports" />} />
 				<Route exact path="/technology" render={ (props) => <HeadlinesCategoryWise stype="technology" />} />
 				<Route exact path="/search" render={ (props) => <HeadlinesSearch />} />
+				<Route exact path="/sources/cnn" render={ (props) => <HeadlinesSources stype="cnn" />} />
+				<Route exact path="/sources/:stype?" render={ (props) => <HeadlinesSources />} />
 			</div>
 		</BrowserRouter>
 	);

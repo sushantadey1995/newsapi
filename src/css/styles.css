@@ -47,6 +47,10 @@
 
 .ant-typography {
 	text-transform: capitalize;
+    background: #001529;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff !important;
 }
 
 .ant-spin-spinning {
@@ -72,4 +76,44 @@
 
 .text-center {
 	text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-drawer .ant-drawer-content {
+	background-color: #001529;
+}
+
+.ant-drawer .ant-drawer-body {
+	padding: 0 !important;
+}
+
+.inlineMenu {
+	display:none;
+	float: right;
+    top: 15px;
+}
+
+.site-layout-content {
+	padding: 10px 50px;
+}
+
+@media only screen and (max-width: 768px) {
+	.inlineMenu {
+		display: inline-block;
+	}
+	.horizontalMenu {
+		display:none;
+	}
+	.ant-layout-header {
+		padding: 0 15px;
+	}
+	.site-layout-content {
+		padding: 10px 15px;
+	}
 }

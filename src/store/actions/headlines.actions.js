@@ -13,6 +13,13 @@ export function getCategoryWiseHeadlines(data,type) {
 			}
 }
 
+export function getHeadlinesFromSources(data) {
+	return	{
+				type: "SOURCES",
+				payload: data
+			}
+}
+
 export function searchedHeadlines(data) {
 	return	{
 				type: "SEARCHHEADLINES",

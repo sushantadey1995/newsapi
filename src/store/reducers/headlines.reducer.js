@@ -9,7 +9,8 @@ const initialState = {
 	sportsHeadlines: [],
 	technologyHeadlines: [],
 	searchHeadlines: [],
-	searchWithText: ""
+	searchWithText: "",
+	sourcesHeadlines: [],
 };
 
 const headlinesReducer = (state = initialState, action) => {
@@ -62,6 +63,11 @@ const headlinesReducer = (state = initialState, action) => {
 		return {
 				...state,
 				searchWithText: action.payload
+			};
+	} else if(action.type === "SOURCES"){
+		return {
+				...state,
+				sourcesHeadlines: action.payload
 			};
 	}
 	
